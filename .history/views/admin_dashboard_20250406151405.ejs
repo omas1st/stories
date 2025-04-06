@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Dashboard</title>
+</head>
+<body>
+  <h1>Admin Dashboard</h1>
+  <p>Welcome, <%= session.user %>!</p>
+  <a href="/admin/logout">Logout</a>
+  <h2>All Success Stories</h2>
+  <ul>
+    <% stories.forEach(story => { %>
+      <li>
+        <strong><%= story.name %></strong> - <%= story.gmail %> - <%= story.successStory %>
+      </li>
+    <% }) %>
+  </ul>
+  <a href="/admin/add">Add New Story</a>
+</body>
+</html>

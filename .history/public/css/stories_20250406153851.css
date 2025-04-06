@@ -1,0 +1,52 @@
+/* public/css/stories.css */
+
+/* Container for the success stories page */
+.stories-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Individual story container */
+  .story {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  /* First row: header with image and name */
+  .story-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .story-header img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #0077cc;
+    margin-right: 20px;
+  }
+  
+  .story-header h2 {
+    margin: 0;
+    font-size: 1.6rem;
+    color: #0077cc;
+  }
+  
+  /* Second row: email and success story content */
+  .story-content {
+    padding-left: 100px; /* aligns with header text */
+  }
+  
+  .story-content p {
+    margin: 5px 0;
+    line-height: 1.5;
+  }
+  

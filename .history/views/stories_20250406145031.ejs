@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Success Stories</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; background: #f9f9f9; }
+    .story { background: #fff; padding: 20px; margin-bottom: 15px; border-radius: 5px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+    .story img { float: left; margin-right: 20px; width: 100px; height: 100px; object-fit: cover; border-radius: 50%; }
+    .story h2 { margin: 0 0 5px; }
+    .clear { clear: both; }
+  </style>
+</head>
+<body>
+  <h1>Success Stories</h1>
+  <% stories.forEach(story => { %>
+    <div class="story">
+      <img src="/images/<%= story.image %>" alt="<%= story.name %>">
+      <h2><%= story.name %></h2>
+      <p><strong>Email:</strong> <%= story.gmail %></p>
+      <p><%= story.successStory %></p>
+      <div class="clear"></div>
+    </div>
+  <% }) %>
+</body>
+</html>

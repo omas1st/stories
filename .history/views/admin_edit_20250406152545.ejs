@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Edit Success Story</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    label { display: block; margin-top: 10px; }
+  </style>
+</head>
+<body>
+  <h1>Edit Success Story</h1>
+  <form action="/admin/edit/<%= story._id %>" method="POST">
+    <label>Name:</label>
+    <input type="text" name="name" value="<%= story.name %>" required />
+
+    <label>Gmail:</label>
+    <input type="email" name="gmail" value="<%= story.gmail %>" required />
+
+    <label>Success Story:</label>
+    <textarea name="successStory" required><%= story.successStory %></textarea>
+
+    <label>Image Filename:</label>
+    <input type="text" name="image" value="<%= story.image %>" />
+
+    <br/><br/>
+    <button type="submit">Update Story</button>
+  </form>
+  <br/>
+  <a href="/admin/dashboard">Back to Dashboard</a>
+</body>
+</html>

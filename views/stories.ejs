@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Success Stories</title>
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/css/stories.css">
+</head>
+<body>
+  <div class="stories-container">
+    <header>
+      <h1>Success Stories</h1>
+    </header>
+    <% stories.forEach(story => { %>
+      <div class="story">
+        <div class="story-header">
+          <img src="/images/<%= story.image %>" alt="<%= story.name %>">
+          <h2><%= story.name %></h2>
+        </div>
+        <div class="story-content">
+          <p><strong>Email:</strong> <%= story.gmail %></p>
+          <p><%= story.successStory %></p>
+        </div>
+      </div>
+    <% }) %>
+  </div>
+</body>
+</html>

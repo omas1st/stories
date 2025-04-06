@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Add Success Story</title>
+</head>
+<body>
+  <h1>Add New Success Story</h1>
+  <form action="/admin/add" method="POST">
+    <label>Name:</label>
+    <input type="text" name="name" required />
+    <br />
+    <label>Gmail:</label>
+    <input type="email" name="gmail" required />
+    <br />
+    <label>Success Story:</label>
+    <textarea name="successStory" required></textarea>
+    <br />
+    <label>Image Filename:</label>
+    <input type="text" name="image" placeholder="img1.jpg" />
+    <br />
+    <button type="submit">Add Story</button>
+  </form>
+  <a href="/admin/dashboard">Back to Dashboard</a>
+</body>
+</html>

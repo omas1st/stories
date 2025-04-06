@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Edit Success Story</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="admin-header">
+      <h1>Edit Success Story</h1>
+      <div>
+        <a href="/admin/dashboard">Dashboard</a>
+        <a href="/admin/logout">Logout</a>
+      </div>
+    </div>
+    <div class="admin-container">
+      <form class="admin-form" action="/admin/edit/<%= story._id %>" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" name="name" value="<%= story.name %>" required />
+        
+        <label for="gmail">Gmail:</label>
+        <input type="email" name="gmail" value="<%= story.gmail %>" required />
+        
+        <label for="successStory">Success Story:</label>
+        <textarea name="successStory" required><%= story.successStory %></textarea>
+        
+        <label for="image">Image Filename:</label>
+        <input type="text" name="image" value="<%= story.image %>" />
+        
+        <button type="submit">Update Story</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
