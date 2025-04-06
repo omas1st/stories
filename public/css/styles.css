@@ -1,103 +1,100 @@
-/* stories.css */
-
 /* Global Styles */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f4f6f8;
-    margin: 0;
-    padding: 0;
-    color: #333;
-  }
-  
-  .container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 30px auto;
-    padding: 20px;
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  }
-  
-  /* Header Styles */
-  header, .admin-header {
-    background-color: #0077cc;
-    color: #fff;
-    padding: 15px 20px;
-    border-radius: 8px 8px 0 0;
-  }
-  
-  .admin-header {
-    background-color: #343a40;
-  }
-  
-  /* Global Link Styles */
-  a {
-    text-decoration: none;
-    color: #0077cc;
-  }
-  
-  a:hover {
-    text-decoration: underline;
-  }
-  
-  /* Admin Panel */
-  .admin-container {
-    padding: 20px;
-  }
-  
-  .admin-form {
-    max-width: 600px;
-    margin: 0 auto;
-  }
-  
-  .admin-form label {
-    display: block;
-    margin-top: 15px;
-    font-weight: bold;
-  }
-  
-  .admin-form input,
-  .admin-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  .admin-form button {
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #0077cc;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  .admin-form button:hover {
-    background-color: #005fa3;
-  }
-  
-  /* Admin Dashboard List */
-  .dashboard-list {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .dashboard-list li {
-    background: #f9f9f9;
-    margin-bottom: 10px;
-    padding: 15px;
-    border-radius: 4px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .dashboard-list li a {
-    color: #0077cc;
-    margin-left: 10px;
-  }
-  
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f6f8;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Header Styles */
+header, .admin-header {
+  background-color: #0077cc;
+  color: #fff;
+  padding: 15px 20px;
+  border-radius: 8px 8px 0 0;
+}
+
+.admin-header {
+  background-color: #343a40;
+}
+
+/* Global Link Styles */
+a {
+  text-decoration: none;
+  color: #0077cc;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Admin Panel */
+.admin-container {
+  padding: 20px;
+}
+
+.admin-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.admin-form label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.admin-form input,
+.admin-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.admin-form button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #0077cc;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.admin-form button:hover {
+  background-color: #005fa3;
+}
+
+/* Admin Dashboard List */
+.dashboard-list {
+  list-style: none;
+  padding: 0;
+}
+
+.dashboard-list li {
+  background: #f9f9f9;
+  margin-bottom: 10px;
+  padding: 15px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dashboard-list li a {
+  color: #0077cc;
+  margin-left: 10px;
+}
